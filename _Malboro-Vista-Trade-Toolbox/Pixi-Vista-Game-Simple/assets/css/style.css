@@ -1,0 +1,440 @@
+/* Font Family */
+/* color names */
+@font-face {
+  font-family: "NeulandGrotesk-Condensed-Light";
+  src: url("../fonts/NeulandGrotesk-CondensedLight.eot"), url("../fonts/NeulandGrotesk-CondensedLight.woff") format("woff"), url("../fonts/NeulandGrotesk-CondensedLight.ttf") format("truetype"), url("../fonts/NeulandGrotesk-CondensedLight.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "NeulandGrotesk-Medium-Expanded";
+  src: url("../fonts/NeulandGrotesk-MediumExpanded.eot"), url("../fonts/NeulandGrotesk-MediumExpanded.woff") format("woff"), url("../fonts/NeulandGrotesk-MediumExpanded.ttf") format("truetype"), url("../fonts/NeulandGrotesk-MediumExpanded.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "NeulandGrotesk-Condensed-Regular";
+  src: url("../fonts/NeulandGrotesk-CondensedRegular.eot"), url("../fonts/NeulandGrotesk-CondensedRegular.woff") format("woff"), url("../fonts/NeulandGrotesk-CondensedRegular.ttf") format("truetype"), url("../fonts/NeulandGrotesk-CondensedRegular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* ::: Function for converting a px based font-size to rem.:::
+    usage: @include fontSize(10);
+*/
+/* ::: Function for converting a px based font-size to rem.:::
+    usage: @include fontSize(10);
+*/
+/* === SMALL PHONES === */
+/* === MEDIUM PHONES === */
+/* === Large PHONES === */
+/* === Tablets === */
+/* === DESKTOP / WIDE / WIDER === */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  outline-style: none;
+  height: 100%; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body main.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #111d36;
+  position: absolute; }
+  body main.wrapper section.intro {
+    display: none !important;
+    color: #ffffff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 2rem 0; }
+    body main.wrapper section.intro header {
+      color: #ffffff;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      padding: 2rem 0;
+      text-transform: uppercase;
+      z-index: 2; }
+      body main.wrapper section.intro header h3 {
+        font-family: 'NeulandGrotesk-Condensed-Light';
+        font-size: 50px;
+        font-size: 3.125rem;
+        letter-spacing: 3px; }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper section.intro header h3 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    letter-spacing: 2px; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper section.intro header h3 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    letter-spacing: 2px; } }
+
+      body main.wrapper section.intro header h2 {
+        font-family: 'NeulandGrotesk-Medium-Expanded';
+        font-size: 56px;
+        font-size: 3.5rem;
+        padding: 1rem;
+        background: -webkit-linear-gradient(45deg, #d946f6 44%, #03dbfb 56%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper section.intro header h2 {
+    font-size: 34px;
+    font-size: 2.125rem;
+    padding: 0.5rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper section.intro header h2 {
+    font-size: 27px;
+    font-size: 1.6875rem;
+    padding: 0.5rem; } }
+
+      body main.wrapper section.intro header figure.logo {
+        max-width: 625px;
+        margin: auto; }
+    body main.wrapper section.intro article.text {
+      margin-top: -8rem; }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper section.intro article.text {
+    margin-top: -4rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper section.intro article.text {
+    margin-top: -4rem; } }
+
+      body main.wrapper section.intro article.text h5 {
+        text-transform: uppercase;
+        font-family: 'NeulandGrotesk-Condensed-Regular';
+        font-size: 45px;
+        font-size: 2.8125rem;
+        padding-bottom: 1rem;
+        letter-spacing: 2px; }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper section.intro article.text h5 {
+    letter-spacing: 1px;
+    font-size: 27px;
+    font-size: 1.6875rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper section.intro article.text h5 {
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-size: 1.375rem; } }
+
+      body main.wrapper section.intro article.text p {
+        font-family: 'NeulandGrotesk-Condensed-Light';
+        font-size: 33px;
+        font-size: 2.0625rem;
+        letter-spacing: 2px;
+        line-height: 110%; }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper section.intro article.text p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    letter-spacing: 1px; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper section.intro article.text p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    letter-spacing: 1px; } }
+
+      body main.wrapper section.intro article.text p.info-1,
+      body main.wrapper section.intro article.text p.info-2,
+      body main.wrapper section.intro article.text p.info-3 {
+        padding-bottom: 1rem; }
+    body main.wrapper section.intro figure.swirl {
+      position: absolute;
+      bottom: 1rem; }
+    body main.wrapper section.intro button.btn-play {
+      font-family: 'NeulandGrotesk-Condensed-Regular';
+      background-image: -webkit-gradient(linear, left top, right top, from(#009ad8), color-stop(51%, #00f07a), to(#00f07a));
+      background-image: -o-linear-gradient(left, #009ad8 0%, #00f07a 51%, #00f07a 100%);
+      background-image: linear-gradient(to right, #009ad8 0%, #00f07a 51%, #00f07a 100%);
+      margin: 10px;
+      letter-spacing: 2px;
+      padding: 10px 75px;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 20px;
+      border: 0;
+      outline: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      font-size: 35px;
+      font-size: 2.1875rem; }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper section.intro button.btn-play {
+    font-size: 20px;
+    font-size: 1.25rem;
+    padding: 8px 45px;
+    border-radius: 10px; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper section.intro button.btn-play {
+    font-size: 17px;
+    font-size: 1.0625rem;
+    padding: 6px 35px;
+    border-radius: 10px; } }
+
+      body main.wrapper section.intro button.btn-play:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none; }
+      body main.wrapper section.intro button.btn-play span.arrow {
+        position: absolute;
+        right: 17px;
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 5px;
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg); }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper section.intro button.btn-play span.arrow {
+    padding: 3px;
+    right: 10px; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper section.intro button.btn-play span.arrow {
+    padding: 3px;
+    right: 10px; } }
+
+  body main.wrapper .inner-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    background: url("../img/background.png") no-repeat center;
+    background-size: 100% 100%; }
+    @media (min-width: 320px) and (max-width: 1366px) {
+      body main.wrapper .inner-wrapper {
+        max-width: unset; } }
+    @media (min-width: 320px) and (max-width: 1366px) and (orientation: landscape) {
+      body main.wrapper .inner-wrapper {
+        display: none; } }
+    body main.wrapper .inner-wrapper header {
+      color: #ffffff;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      padding: 2rem 0;
+      text-transform: uppercase;
+      z-index: 2; }
+      body main.wrapper .inner-wrapper header h3 {
+        font-family: 'NeulandGrotesk-Condensed-Light';
+        font-size: 50px;
+        font-size: 3.125rem;
+        letter-spacing: 3px; }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper .inner-wrapper header h3 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    letter-spacing: 2px; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper .inner-wrapper header h3 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    letter-spacing: 2px; } }
+
+      body main.wrapper .inner-wrapper header h2 {
+        font-family: 'NeulandGrotesk-Medium-Expanded';
+        font-size: 56px;
+        font-size: 3.5rem;
+        padding: 1rem;
+        background: -webkit-linear-gradient(45deg, #d946f6 44%, #03dbfb 56%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+@media screen and (min-width: 325px) and (max-width: 424px) {
+  body main.wrapper .inner-wrapper header h2 {
+    font-size: 34px;
+    font-size: 2.125rem;
+    padding: 0.5rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body main.wrapper .inner-wrapper header h2 {
+    font-size: 27px;
+    font-size: 1.6875rem;
+    padding: 0.5rem; } }
+
+      body main.wrapper .inner-wrapper header figure.logo {
+        max-width: 625px;
+        margin: auto; }
+    body main.wrapper .inner-wrapper section.outro {
+      height: 100%; }
+    body main.wrapper .inner-wrapper section#game-wrapper {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      position: absolute; }
+      body main.wrapper .inner-wrapper section#game-wrapper #game-stage {
+        display: block;
+        width: 100%;
+        height: 100%; }
+  body main.wrapper .wrapper-landscape {
+    display: none; }
+    @media (min-width: 320px) and (max-width: 1366px) and (orientation: landscape) {
+      body main.wrapper .wrapper-landscape {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: image-url("../img/background.png") no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    body main.wrapper .wrapper-landscape .inner_bloc {
+      margin: 0 auto; }
+      body main.wrapper .wrapper-landscape .inner_bloc figure.landscape__img {
+        max-width: 10rem;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        margin: auto; }
+        body main.wrapper .wrapper-landscape .inner_bloc figure.landscape__img img {
+          width: 100%;
+          height: auto; }
+      body main.wrapper .wrapper-landscape .inner_bloc p.info {
+        font-family: 'NeulandGrotesk-Condensed-Regular';
+        font-size: 21px;
+        font-size: 1.3125rem;
+        color: #ffffff;
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 1rem 0; }
+
+/*# sourceMappingURL=style.css.map */

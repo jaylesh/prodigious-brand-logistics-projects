@@ -1,0 +1,26 @@
+/* Font Family */
+$default-font-family: sans-serif;
+
+$NeulandGrotesk-CondensedLight: 'NeulandGrotesk-Condensed-Light';
+$Neuland-condensed-family: $NeulandGrotesk-CondensedLight, $default-font-family;
+
+$NeulandGrotesk-CondensedRegular: 'NeulandGrotesk-Condensed-Regular';
+$Neuland-condensed-family: $NeulandGrotesk-CondensedRegular, $default-font-family;
+
+$NeulandGrotesk-MediumExpanded: 'NeulandGrotesk-Medium-Expanded';
+$Neuland-condensed-family: $NeulandGrotesk-MediumExpanded, $default-font-family;
+
+/* color names */
+$color-primary: #ffba36;
+$color-secondary: #0054c6;
+$color-tertiary: #060010;
+//$color-secondary: #a7a8a8;
+//$color-tertiary: #414141;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-primary: #111d36;
+
+//media orientaton
+$landscape: "landscape";
+$portrait: "portrait";
+$all-desktop: "all";

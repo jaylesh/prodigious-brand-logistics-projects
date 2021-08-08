@@ -1,0 +1,133 @@
+/// @author Vikesh
+/// @date 4 May 2020
+/// @access public
+////
+@import "vendors/include-media";
+$breakpoints: ("mobile-small": 320px,
+  "mobile-medium": 325px,
+  "mobile-large": 425px,
+  "tablet": 768px,
+  "desktop": 1920px,
+  //"desktop-wide": 1280px,
+  //"desktop-wider": 1900px,
+);
+
+/* === SMALL PHONES === */
+@mixin media-phone-small($orientation: null) {
+  @if $orientation=="landscape" {
+    @include media("screen", ">=mobile-small", "<=568px", "landscape") {
+      @content;
+    }
+  }
+
+  @else if $orientation=="portrait" {
+    @include media("screen", ">=mobile-small", "<mobile-medium", "portrait") {
+      @content;
+    }
+  }
+
+  @else {
+    @include media("screen", ">=mobile-small",  "<mobile-medium") {
+      @content;
+    }
+  }
+}
+
+/* === MEDIUM PHONES === */
+@mixin media-phone-medium($orientation: null) {
+  @if $orientation=="landscape" {
+    @include media("screen", ">=mobile-medium", "<=667px", "landscape") {
+      @content;
+    }
+  }
+
+  @else if $orientation=="portrait" {
+    @include media("screen", ">=mobile-medium", "<mobile-large", "portrait") {
+      @content;
+    }
+  }
+
+  @else {
+    @include media("screen", ">=mobile-medium", "<mobile-large") {
+      @content;
+    }
+  }
+}
+
+/* === Large PHONES === */
+@mixin media-phone-large($orientation: null) {
+  @if $orientation=="landscape" {
+    @include media("screen", ">=mobile-large", "<tablet", "landscape") {
+      @content;
+    }
+  }
+
+  @else if $orientation=="portrait" {
+    @include media("screen", ">=mobile-large", "<tablet", "portrait") {
+      @content;
+    }
+  }
+
+  @else {
+    @include media("screen", ">mobile-large", "<tablet") {
+      @content;
+    }
+  }
+}
+
+/* === Tablets === */
+@mixin media-tablet($orientation: null) {
+  @if $orientation=="landscape" {
+    @include media("screen", ">=tablet", "<=desktop", "landscape") {
+      @content;
+    }
+  }
+
+  @else if $orientation=="portrait" {
+    @include media("screen", ">=tablet", "<=desktop", "portrait") {
+      @content;
+    }
+  }
+
+  @else {
+    @include media("screen", ">=tablet", "<=desktop") {
+      @content;
+    }
+  }
+}
+
+/* === DESKTOP / WIDE / WIDER === */
+/// @param {media}  $media - desktop || desktop-wide || desktop-wider
+@mixin media-desktop($media: null) {
+  @if $media=="desktop-wide" {
+    @include media("screen", ">=desktop-wide", "<desktop-wider") {
+      @content;
+    }
+  }
+
+  @else if $media=="desktop-wider" {
+    @include media("screen", ">=desktop-wider") {
+      @content;
+    }
+  }
+
+  @else if $media=="all" {
+    @include media("screen", ">=desktop", ">=desktop-wider") {
+      @content;
+    }
+  }
+  @else {
+    //desktop fallback
+    @include media("screen", ">=desktop", "<desktop-wide") {
+      @content;
+    }
+  }
+}
+
+// later usage
+@function translate-media-orientation($c) {
+  $condMap: ("portrait": "portrait",
+      "landscape": "landscape",
+    );
+  @return map-get($condMap, $c);
+}

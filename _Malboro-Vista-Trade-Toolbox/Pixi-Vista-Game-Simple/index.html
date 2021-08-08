@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="wrapper">
+        <!--<nav></nav>-->
+        <!--intro-->
+        <section class="intro" id="intro">
+            <header>
+                <h3>time to play</h3>
+                <h2>destination</h2>
+                <figure class="logo"><img src="assets/img/logo_vista.png" alt=""></figure>
+            </header>
+
+            <article class="text">
+                <h5>how to play</h5>
+                <p class="info-1">Shoot the capsules into the destination<br> for each flavor.</p>
+                <p class="info-2">Destination circles will move around<br> and change in size.</p>
+                <p class="info-3">Get 10 correct matches per destination<br> and move to the next level.</p>
+                <p class="info-4">10 incorrect matches and your game ends.</p>
+            </article>
+            <figure class="swirl"><img src="assets/img/swirls.png" alt=""></figure>
+            <button class="btn-play">
+                play game <span class="arrow"></span>
+            </button>
+        </section>
+
+        <div class="inner-wrapper">
+
+            <header id="header">
+                <h3>time to play</h3>
+                <h2>destination</h2>
+                <figure class="logo"><img src="assets/img/logo_vista.png" alt=""></figure>
+            </header>
+            <div class="swirl">
+                <figure class="swirl"><img src="assets/img/swirls.png" alt=""></figure>
+            </div>
+            <!--game-->
+            <section id="game-wrapper"><canvas id="game-stage"></canvas></section>
+            <!--outro-->
+            <section class="outro"></section>
+        </div>
+
+        <div class="wrapper-landscape">
+            <div class="inner_bloc">
+                <figure class="landscape__img">
+                    <img src="assets/img/landscape.png" alt="">
+                </figure>
+                <p class="info">
+                    For the best experience <br>Please rotate your device
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="assets/scripts/pixi.min.js"></script>
+    <script src="assets/scripts/utils.js"></script>
+    <script src="assets/scripts/game.js"></script>
+
+</body>
+
+</html>

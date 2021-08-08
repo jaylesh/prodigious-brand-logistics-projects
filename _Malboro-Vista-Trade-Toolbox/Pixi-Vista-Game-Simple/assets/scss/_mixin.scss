@@ -1,0 +1,75 @@
+/* ::: Function for converting a px based font-size to rem.:::
+    usage: @include fontSize(10);
+*/
+/* ::: Function for converting a px based font-size to rem.:::
+    usage: @include fontSize(10);
+*/
+
+@function rem-calc($size) {
+  $remSize: $size / 16px;
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin rem-font-size($size) {
+  font-size: $size;
+  font-size: rem-calc($size);
+}
+
+@mixin noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+@mixin centeredElementVertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin centeredElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin noselect{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+//Fluid Typography
+//@function strip-unit($value) {
+//  @return $value / ($value * 0 + 1);
+//}
+//
+//@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+//  $u1: unit($min-vw);
+//  $u2: unit($max-vw);
+//  $u3: unit($min-font-size);
+//  $u4: unit($max-font-size);
+//
+//  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+//    & {
+//      font-size: $min-font-size;
+//      @media screen and (min-width: $min-vw) {
+//        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+//      }
+//      @media screen and (min-width: $max-vw) {
+//        font-size: $max-font-size;
+//      }
+//    }
+//  }
+//}
